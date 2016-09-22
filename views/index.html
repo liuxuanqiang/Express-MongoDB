@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="http://v3.bootcss.com/assets/css/docs.min.css">
+</head>
+
+<body>
+    <div class="bs-docs-header" id="content">
+        <div class="container">
+            <h1>首页</h1>
+            <p>本Demo简单演示了如何使用Express 4.x 与MongoDb实现增删改查等Web网站最基本的功能。</p>
+        </div>
+    </div>
+    <div class="container" style="margin-top:30px;">
+        <div class="row">
+            <a href="add.html" type="button" class="btn btn-primary">添加一条数据</a>
+        </div>
+        <div class="row">
+            <h3>数据列表</h3>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>uid</th>
+                            <th>title</th>
+                            <th>content</th>
+                            <th>createTime</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <% demos.forEach(function( demo ){ %>
+                            <tr>
+                                <td>
+                                    <%= demo._id %>
+                                </td>
+                                <td>
+                                    <%= demo.uid %>
+                                </td>
+                                <td>
+                                    <%= demo.title %>
+                                </td>
+                                <td>
+                                    <%= demo.content %>
+                                </td>
+                                <td>
+                                    <%= demo.createTime %>
+                                </td>
+                                <td><a href="del.html?id=<%= demo.id %>">删除</a> | <a href="update.html?id=<%= demo.id %>">修改</a></td>
+                            </tr>
+                            <% }); %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div> 
+</body>
+
+</html>

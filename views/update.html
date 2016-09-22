@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css'>
+    <link rel="stylesheet" href="http://v3.bootcss.com/assets/css/docs.min.css">
+</head>
+
+<body>
+    <div class="bs-docs-header" id="content">
+        <div class="container">
+            <h1>修改数据</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <form method="post" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-1 control-label">uid：</label>
+                    <div class="col-sm-5">
+                        <input type="text" name="uid" value="<%= demo.uid %>" class="form-control" placeholder="uid">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-1 control-label">title：</label>
+                    <div class="col-sm-5">
+                        <input type="text" name="title" value="<%= demo.title %>" class="form-control" placeholder="title">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-1 control-label">content：</label>
+                    <div class="col-sm-5">
+                        <textarea name="content" class="form-control" rows="5">
+                            <%= demo.content %>
+                        </textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-5 col-sm-offset-1">
+                        <input type="hidden" name="id" value="<%= demo.id %>">
+                        <input type="submit" class="btn btn-primary" value="提交">
+                        <input type="reset" class="btn btn-default" value="重置">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
