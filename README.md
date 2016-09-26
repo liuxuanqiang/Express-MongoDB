@@ -18,7 +18,7 @@ Node.js + MongoDb + Express 4.x
 * `npm install` 进行依赖模块安装
 * 安装完成后，`npm start` 启动应用，浏览器打开 http://localhost:3000 即可使用
 
-【一些参考资料】
+#### 一些参考资料
 * Express 4.x 中文手册：http://www.expressjs.com.cn/4x/api.html
 * MongoDb的安装与启动：https://segmentfault.com/a/1190000004071817
 * Mongoose的基本使用：https://segmentfault.com/a/1190000002973153
