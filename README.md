@@ -13,5 +13,16 @@
 ### 开发环境：
 Node.js + MongoDb + Express 4.x
 
+### 如何使用：
+* 首先请启动MongoDb服务
+* `npm install` 进行依赖模块安装
+* 安装完成后，`npm start` 启动应用，浏览器打开 http://localhost:3000 即可使用
+
+【一些参考资料】
+* Express 4.x 中文手册：http://www.expressjs.com.cn/4x/api.html
+* MongoDb的安装与启动：https://segmentfault.com/a/1190000004071817
+* Mongoose的基本使用：https://segmentfault.com/a/1190000002973153
+* ejs模板引擎的基本使用：http://www.cnblogs.com/xuanhun/p/3922847.html
+
 ### 项目地址：
 https://github.com/liuxuanqiang/Express_MongoDb_Demo
